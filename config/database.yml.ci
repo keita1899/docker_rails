@@ -1,7 +1,6 @@
 test:
   adapter: postgresql
   encoding: unicode
-  database: <%= ENV.fetch("POSTGRES_DB") { "myapp_test" } %>
-  username: <%= ENV.fetch("POSTGRES_USER") { "user" } %>
-  password: <%= ENV.fetch("POSTGRES_PASSWORD") { "postgres" } %>
+  database: myapp_test
+  username: user
   host: localhost
