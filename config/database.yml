@@ -23,6 +23,7 @@ default: &default
   host: db
   username: <%= ENV.fetch("POSTGRES_USER") { "user" } %>
   password: <%= ENV.fetch("POSTGRES_PASSWORD") { "postgres" } %>
+  port: 5432
 
 development:
   <<: *default
